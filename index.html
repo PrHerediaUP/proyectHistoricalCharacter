@@ -1,25 +1,51 @@
+<html><!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css" > 
-        <title> CV-Personaje Historico </title>
-    </head>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 25% 25% 25%;
+  background-color: aliceblue;
+  padding: 10px;
+  justify-content: center;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>Personajes Historicos</h1>
+
+<div class="grid-container">
+    <div class="grid-item"><a href="./pages/trajano.html"> Trajano </a></div>
+    <div class="grid-item"><a href="./pages/.html"> 1 </a></div>
+    <div class="grid-item"><a href="./pages/.html"> 2 </a></div>
+    <div class="grid-item"><a href="./pages/.html"> 3 </a></div>
+    <div class="grid-item"><a href="./pages/.html"> 4 </a></div>
+    <div class="grid-item"><a href="./pages/.html"> 5 </a></div>
+    <div class="grid-item"><a href="./pages/.html"> 6 </a></div>
+    <div class="grid-item"><a href="./pages/.html"> 7 </a></div>
+    <div class="grid-item"><a href="./pages/.html"> 8 </a></div>
+    <div class="grid-item"><a href="./pages/.html"> 9 </a></div>
+    <div class="grid-item"><a href="./pages/.html"> 10 </a></div>
+    <div class="grid-item"><a href="./pages/.html"> 11 </a></div>
+    <div class="grid-item"><a href="./pages/.html"> 12 </a></div>
+    <div class="grid-item"><a href="./pages/.html"> 13 </a></div>
+    <div class="grid-item"><a href="./pages/AbrahamL.html"> Abraham L. </a></div>
+    <div class="grid-item"><a href="./pages/.html"> 15 </a></div>
+    <div class="grid-item"><a href="./pages/.html"> 16 </a></div>
+    <div class="grid-item"><a href="./pages/.html"> 17 </a></div>
     
-    <body>
-        <div class="conteiner">
-                <div class="child">
-                    <div class="row">
-                        <div class="column1" style="background-color:#aaa;">
-                            <h2>Abraham Lincoln</h2>
-                            <img src="data:image/jpeg;base64,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">
-                            <p>Febrero 1809 - Abril 1865</p>
-                        </div>
-                        <div class="column2" style="background-color:#bbb;">
-                            <h2>Contexto historico </h2>
-                            <p>Abraham Lincoln fue un político y abogado estadounidense que ejerció como decimosexto presidente de los Estados Unidos de América desde el 4 de marzo de 1861 hasta su asesinato el 15 de abril de 1865. Lincoln lideró a los Estados Unidos durante la guerra de Secesión, el conflicto más sangriento y quizás también la mayor crisis moral, constitucional y política que ha sufrido la nación estadounidense. Al mismo tiempo, preservó la Unión, abolió la esclavitud, fortaleció el gobierno federal y modernizó la economía.</p>
-                        </div>
-                    </div>
-                
-                </div>
-        </div>
-    </body>
+</div>
+
+
+</body>
 </html>
